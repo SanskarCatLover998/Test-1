@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Dark Mode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="top-bar">
+    <a href="#">About</a>
+    <a href="#">Store</a>
+    <a href="About Us.html"><button class="log-in-btn" onclick="openLogin()">Log In</button></a>
+  </div>
+
+  <!-- Google logo -->
+  <img
+    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    alt="Google Logo"
+    class="logo"
+    width="272"
+    height="92"
+  />
+
+  <!-- Login form -->
+  <div class="login-container">
+    <h2>Sign in</h2>
+    <p>Use your Google Account</p>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" name="username" required>
+      <input type="password" id="password" placeholder="Password" name="password" required>
+      <button type="submit">Sign In</button>
+    </form>
+    <p id="error-message" class="error-message"></p>
+    <p id="user-info" class="user-info"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
